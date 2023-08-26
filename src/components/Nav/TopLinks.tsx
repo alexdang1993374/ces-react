@@ -2,7 +2,7 @@ import React from "react";
 
 const TopLinks = () => {
   return (
-    <div className="w-full flex justify-between items-center p-2 font-bold text-[12px]">
+    <div className="w-full flex justify-between items-center p-[10px] font-bold text-[12px]">
       <div className="flex gap-4">
         <div className="flex gap-1">
           <p>USA</p>
