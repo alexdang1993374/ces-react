@@ -12,8 +12,8 @@ const SearchArea = () => {
   };
 
   return (
-    <div className="w-full flex justify-between p-[1rem]">
-      <div className="flex gap-10 items-center">
+    <div className="w-full flex justify-between py-[1rem] px-[2rem] bg-white">
+      <div className="flex gap-[3rem] items-center">
         <Image alt="logo" src={logo} width={122} height={88} />
 
         <div className="flex items-center">

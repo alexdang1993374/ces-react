@@ -4,7 +4,7 @@ import React from "react";
 
 const TopLinks = () => {
   return (
-    <div className="w-full flex justify-between items-center p-[1rem] font-bold text-[1.2rem]">
+    <div className="w-full flex justify-between items-center py-[1rem] px-[2rem] font-bold text-[1.2rem] bg-white">
       <div className="flex gap-4">
         <div className="flex gap-2">
           <Image alt="USA" src={usFlag} width={22} height={12} />
