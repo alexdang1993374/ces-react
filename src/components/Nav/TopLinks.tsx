@@ -2,7 +2,7 @@ import React from "react";
 
 const TopLinks = () => {
   return (
-    <div className="w-full flex justify-between items-center p-[10px] font-bold text-[12px]">
+    <div className="w-full flex justify-between items-center p-[1rem] font-bold text-[1.2rem]">
       <div className="flex gap-4">
         <div className="flex gap-1">
           <p>USA</p>
@@ -21,7 +21,7 @@ const TopLinks = () => {
 
       <div className="flex justify-end gap-4">
         <p>
-          Shipt to:{" "}
+          Ship to:{" "}
           <span className="text-[#5297ff] decoration-solid underline">
             89044
           </span>
