@@ -10,9 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Navbar />
 
-      <main
-        className={`flex min-h-screen flex-col items-center justify-between p-24 ${font.className} mt-[20rem]`}
-      >
+      <main className={`${font.className} mt-[19rem]`}>
         <Component {...pageProps} />
       </main>
     </>
