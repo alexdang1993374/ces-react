@@ -1,8 +1,8 @@
 import { cart, logo, register, user } from "@/assets";
-import Search from "@/assets/search";
 import Image from "next/image";
 import React, { useState } from "react";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
+import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 const SearchArea = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -37,7 +37,7 @@ const SearchArea = () => {
           )}
 
           <button className="w-[5rem] h-[5rem] bg-red-600 flex justify-center items-center">
-            <Search />
+            <SearchRoundedIcon fontSize="large" className="text-white" />
           </button>
         </div>
       </div>
