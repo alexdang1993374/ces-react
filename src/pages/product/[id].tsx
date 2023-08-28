@@ -9,13 +9,13 @@ const ProductPage = () => {
   return (
     <Center>
       <div className="flex">
-        <div className="w-[30rem] h-[69rem] bg-red-600 relative flex items-center justify-center">
+        <div className="w-[30rem] h-[69rem] bg-gray-200 relative flex items-center justify-center">
           <div className="w-full h-full flex flex-col gap-6">
-            <div className="w-full bg-gray-500 p-4">
-              <p className="uppercase text-[2rem]">all products</p>
+            <div className="w-full bg-gray-300 p-4">
+              <p className="text-[2rem]">All Products</p>
             </div>
 
-            <div className="w-full flex items-center cursor-pointer text-[1.3rem] font-bold text-gray-600 p-4 hover:bg-gray-500 hover:text-white">
+            <div className="w-full flex items-center cursor-pointer text-[1.3rem] font-bold text-gray-700 p-4 hover:bg-gray-500 hover:text-white">
               <p>Options</p>
             </div>
           </div>

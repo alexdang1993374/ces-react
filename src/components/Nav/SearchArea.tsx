@@ -10,7 +10,9 @@ const SearchArea = () => {
         <Image alt="logo" src={logo} width={122} height={88} />
       </Link>
 
-      <SearchBar />
+      <div className="flex items-center">
+        <SearchBar />
+      </div>
 
       <div className="flex flex-col justify-end gap-4">
         <div className="flex gap-6 font-bold text-[1.4rem] justify-end">

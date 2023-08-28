@@ -81,7 +81,7 @@ const SearchBar = () => {
             value={searchValue}
             onChange={handleInputChange}
             placeholder="Enter keyword, item, model, or part number"
-            className="text-[1.2rem] w-[45rem] focus:border-none outline-none placeholder-gray-500 "
+            className="text-[1.2rem] w-[45rem] focus:border-none outline-none placeholder-gray-500"
           />
         </div>
 

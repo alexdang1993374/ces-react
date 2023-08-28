@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
 
 interface SearchResultProps {
-  id: string;
   name: string;
   availability: number;
   price: string;
@@ -11,7 +10,6 @@ interface SearchResultProps {
 }
 
 const SearchResult = ({
-  id,
   name,
   availability,
   price,
