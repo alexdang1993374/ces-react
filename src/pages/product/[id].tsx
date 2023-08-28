@@ -15,13 +15,13 @@ const ProductPage = () => {
               <p className="uppercase text-[2rem]">all products</p>
             </div>
 
-            <div className="w-full flex items-center cursor-pointer text-[1.3rem] font-bold text-gray-600 p-4">
+            <div className="w-full flex items-center cursor-pointer text-[1.3rem] font-bold text-gray-600 p-4 hover:bg-gray-500 hover:text-white">
               <p>Options</p>
             </div>
           </div>
         </div>
 
-        <div className=" h-screen border border-black p-8 flex flex-1 flex-col gap-6">
+        <div className=" h-screen p-8 flex flex-1 flex-col gap-6">
           <h1 className="text-[2.6rem]">Portable Generators</h1>
 
           <div className="grid grid-cols-3 gap-3">

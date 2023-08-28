@@ -26,7 +26,9 @@ export default function Home() {
                 </div>
 
                 <div
-                  className="w-full flex items-center cursor-pointer text-[1.3rem] font-bold text-gray-600 p-4"
+                  className={`w-full flex items-center cursor-pointer text-[1.3rem] font-bold text-gray-600 p-4 ${
+                    isMenuOpen ? "bg-gray-500 text-white" : ""
+                  }`}
                   id="content-container"
                   onMouseEnter={handleOpenMenu}
                   onMouseLeave={handleMouseLeave}
@@ -37,12 +39,12 @@ export default function Home() {
 
               {isMenuOpen && (
                 <div
-                  className="absolute top-0 left-full w-[60rem] h-[64rem] bg-blue-400 p-10 flex gap-4"
+                  className="absolute top-0 left-full w-[60rem] h-[64rem] bg-white p-10 flex gap-4"
                   onMouseEnter={handleOpenMenu}
                   onMouseLeave={handleMouseLeave}
                 >
                   <Link
-                    className="bg-gray-300 w-[15rem] h-[15rem] flex flex-col cursor-pointer gap-2"
+                    className="bg-gray-300 w-[15rem] h-[15rem] flex flex-col cursor-pointer text-[1.2rem] gap-2 hover:text-red-600"
                     href={`/product/portableGenerators`}
                   >
                     <div className="w-full h-[80%]">

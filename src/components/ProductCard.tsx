@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const links = [1, 2, 3, 4];
+const links = ["A", "B", "C", "D"];
 
 interface ProductCartProps {
   id: string;
@@ -19,8 +19,8 @@ const ProductCard = ({
   image,
 }: ProductCartProps) => {
   return (
-    <div className="w-[26.6rem] h-[56rem] border border-black flex flex-col p-4">
-      <div className="w-full h-1/2 border border-black flex items-center justify-center">
+    <div className="w-[26.6rem] h-[56rem] flex flex-col p-4 ">
+      <div className="w-full h-1/2  flex items-center justify-center cursor-pointer">
         <Image
           alt="Product Image"
           src={image}
@@ -31,20 +31,20 @@ const ProductCard = ({
       </div>
 
       <div className="flex w-full h-[8%]">
-        <div className="w-1/3 h-full flex items-center justify-center border border-black">
+        <div className="w-1/3 h-full flex items-center justify-center bg-gray-200">
           1
         </div>
 
-        <div className="w-full bg-red-600 flex items-center justify-center uppercase">
+        <button className="w-full bg-red-600 flex items-center justify-center uppercase text-white text-[1.5rem]">
           add to cart
-        </div>
+        </button>
       </div>
 
       <div className="w-full h-[8%] flex items-center justify-between gap-2">
         {links.map((link) => (
           <div
             key={link}
-            className="w-[5.5rem] h-full flex items-center justify-center border border-black"
+            className="w-[5.5rem] h-full flex items-center justify-center bg-gray-200 cursor-pointer"
           >
             {link}
           </div>
