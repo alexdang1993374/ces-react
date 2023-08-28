@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
+import Link from "next/link";
 
 const SearchArea = () => {
   const [searchValue, setSearchValue] = useState("");
@@ -14,7 +15,9 @@ const SearchArea = () => {
   return (
     <div className="w-full flex justify-between py-[1rem] px-[2rem] bg-white">
       <div className="flex gap-[3rem] items-center">
-        <Image alt="logo" src={logo} width={122} height={88} />
+        <Link href="/">
+          <Image alt="logo" src={logo} width={122} height={88} />
+        </Link>
 
         <div className="flex items-center">
           <input

@@ -5,7 +5,7 @@ import SearchArea from "./SearchArea";
 
 const Navbar = () => {
   return (
-    <nav className="fixed top-0 left-0 w-full border-b-[0.1rem] border-black">
+    <nav className="fixed top-0 left-0 w-full border-b-[0.1rem] border-black z-10">
       <TopLinks />
 
       <Banner />
