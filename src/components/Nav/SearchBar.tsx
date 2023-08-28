@@ -33,6 +33,7 @@ const SearchBar = () => {
   };
 
   const clearSearch = () => {
+    setIsOpen(false);
     setSearchValue("");
     setSuggestions([]);
   };

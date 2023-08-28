@@ -5,6 +5,7 @@ import ProductCard from "@/components/ProductCard";
 
 const ProductPage = () => {
   console.log(productList);
+
   return (
     <Center>
       <div className="flex">
