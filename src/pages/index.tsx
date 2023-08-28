@@ -66,7 +66,7 @@ export default function Home() {
             </div>
 
             <div className="w-[60rem] h-[69rem] flex items-center justify-center border border-black">
-              featured product
+              <p className="text-[1.6rem]">featured product</p>
             </div>
           </div>
         </Center>
