@@ -2,12 +2,12 @@ import ClearRoundedIcon from "@mui/icons-material/ClearRounded";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import { useState, useEffect, useRef } from "react";
 import productList from "../../constants/data.json";
-
-const options = productList.map((product) => product.name);
+import SearchResult from "../SearchResult";
+import { IProduct } from "@/types";
 
 const SearchBar = () => {
   const [searchValue, setSearchValue] = useState("");
-  const [suggestions, setSuggestions] = useState<string[]>([]);
+  const [suggestions, setSuggestions] = useState<IProduct[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const wrapperRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
@@ -17,8 +17,8 @@ const SearchBar = () => {
       setSuggestions([]);
     } else {
       const delayDebounceFn = setTimeout(() => {
-        const filteredSuggestions = options.filter((option) =>
-          option.toLowerCase().includes(searchValue.toLowerCase())
+        const filteredSuggestions = productList.filter((product) =>
+          product.name.toLowerCase().includes(searchValue.toLowerCase())
         );
         setIsOpen(true);
         setSuggestions(filteredSuggestions);
@@ -80,7 +80,7 @@ const SearchBar = () => {
             value={searchValue}
             onChange={handleInputChange}
             placeholder="Enter keyword, item, model, or part number"
-            className="text-[1.2rem] w-[45rem] focus:border-none outline-none placeholder-gray-500 border border-black"
+            className="text-[1.2rem] w-[45rem] focus:border-none outline-none placeholder-gray-500 "
           />
         </div>
 
@@ -101,14 +101,18 @@ const SearchBar = () => {
       </div>
 
       {suggestions.length > 0 && isOpen && (
-        <div className="w-[50rem] absolute z-10 bg-white border border-gray-300 p-2 rounded">
-          <ul>
-            {suggestions.map((suggestion, index) => (
-              <li key={index} className="cursor-pointer">
-                {suggestion}
-              </li>
-            ))}
-          </ul>
+        <div className="w-[68.5rem] absolute z-10 bg-white border border-gray-300 rounded flex flex-col">
+          <div className="w-full flex items-center justify-between bg-gray-700 p-4 text-white text-[1.2rem]">
+            <p>
+              Display {suggestions.length} out of {productList.length}
+            </p>
+
+            <p className="uppercase">view all</p>
+          </div>
+
+          {suggestions.map((product) => (
+            <SearchResult key={product.id} {...product} />
+          ))}
         </div>
       )}
     </div>
