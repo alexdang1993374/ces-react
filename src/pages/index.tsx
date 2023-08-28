@@ -1,4 +1,5 @@
 import Center from "@/components/Center";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -19,13 +20,19 @@ export default function Home() {
         <Center>
           <div className="flex">
             <div className="w-[30rem] h-[69rem] bg-red-600 relative flex items-center justify-center">
-              <div
-                className="w-full flex items-center justify-center cursor-pointer"
-                id="content-container"
-                onMouseEnter={handleOpenMenu}
-                onMouseLeave={handleMouseLeave}
-              >
-                <p>Generators</p>
+              <div className="w-full h-full flex flex-col gap-6">
+                <div className="w-full bg-gray-500 p-4">
+                  <p className="uppercase text-[2rem]">all products</p>
+                </div>
+
+                <div
+                  className="w-full flex items-center cursor-pointer text-[1.3rem] font-bold text-gray-600 p-4"
+                  id="content-container"
+                  onMouseEnter={handleOpenMenu}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  <p>Generators</p>
+                </div>
               </div>
 
               {isMenuOpen && (
@@ -35,10 +42,22 @@ export default function Home() {
                   onMouseLeave={handleMouseLeave}
                 >
                   <Link
-                    className="bg-gray-300 w-[10rem] h-[10rem] flex items-center justify-center cursor-pointer"
+                    className="bg-gray-300 w-[15rem] h-[15rem] flex flex-col cursor-pointer gap-2"
                     href={`/product/portableGenerators`}
                   >
-                    Portable Generator
+                    <div className="w-full h-[80%]">
+                      <Image
+                        alt="generator"
+                        src="https://cesonline.azureedge.net/media/generac/7683/images/generac_7683_p_med.png"
+                        width={200}
+                        height={200}
+                        className="object-cover"
+                      />
+                    </div>
+
+                    <div className="w-full h-[20%] flex items-center justify-center">
+                      <p>Portable Generators</p>
+                    </div>
                   </Link>
                 </div>
               )}

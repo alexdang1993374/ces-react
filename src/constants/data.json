@@ -1,26 +1,30 @@
 [
   {
     "id": "1",
-    "name": "Product A",
+    "name": "Milwaukee 2846-20 M18 TOP-OFF 175W Power Supply",
     "availability": 10,
-    "price": "$19.99"
+    "price": "$99.00",
+    "image": "https://cesonline.azureedge.net/media/milwaukee/2846-20/images/milwa_284620_p_med.png"
   },
   {
     "id": "2",
-    "name": "Product B",
+    "name": "Milwaukee MXF002-2XC MX Fuel Carry-on 3600W/1800W Power Supply",
     "availability": 5,
-    "price": "$29.99"
+    "price": "$2,299.00",
+    "image": "https://cesonline.azureedge.net/media/milwaukee/mxf002-2xc/images/milwa_mxf0022xc_p_med.png"
   },
   {
     "id": "3",
-    "name": "Product C",
-    "availability": 0,
-    "price": "$9.99"
+    "name": "Generac 5734 GP Series 15000E Portable Generator",
+    "availability": 12,
+    "price": "$3,299.00",
+    "image": "https://cesonline.azureedge.net/media/generac/5734/images/generac_5734_p_med.png"
   },
   {
     "id": "4",
-    "name": "Product D",
+    "name": "Generac 8250 GP Series Portable Inverter Generator",
     "availability": 20,
-    "price": "$39.99"
+    "price": "$649.00",
+    "image": "https://cesonline.azureedge.net/media/generac/8250/images/generac_8250_p_med.png"
   }
 ]
